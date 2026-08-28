@@ -160,20 +160,6 @@ section{ padding:110px 32px; position:relative; }
 .plan-list svg{ width:18px; height:18px; stroke:var(--blue); flex-shrink:0; margin-top:1px; }
 .plan-card .btn{ width:100%; }
 
-/* TESTIMONIOS */
-.test-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px; }
-.test-card{
-  background:var(--card); border:1px solid var(--card-border); border-radius:18px;
-  padding:30px 26px; display:flex; flex-direction:column; gap:18px;
-}
-.quote-icon svg{ width:28px; height:28px; stroke:var(--purple); opacity:0.7; }
-.test-quote{ font-size:15px; line-height:1.65; color:var(--fg-muted); font-style:italic; }
-.test-person{ display:flex; align-items:center; gap:12px; padding-top:6px; border-top:1px solid rgba(255,255,255,0.07); }
-.test-avatar{ width:38px; height:38px; border-radius:50%; background:var(--grad); flex-shrink:0; }
-.test-name{ font-size:14px; font-weight:600; }
-.test-role{ font-size:12.5px; color:var(--fg-dim); }
-.placeholder-tag{ font-size:11px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--fg-dim); }
-
 /* CTA BAND */
 .cta-section{ padding-top:0; }
 .cta-band{
@@ -203,7 +189,7 @@ footer{ padding:100px 32px 40px; }
 .footer-bottom p{ color:var(--fg-dim); font-size:13px; }
 
 @media (max-width: 900px){
-  .feat-grid, .plan-grid, .test-grid{ grid-template-columns:1fr; }
+  .feat-grid, .plan-grid{ grid-template-columns:1fr; }
   .footer-grid{ grid-template-columns:1fr; gap:36px; }
   .plan-card.featured{ transform:none; }
   .hero h1{ font-size:38px; }
